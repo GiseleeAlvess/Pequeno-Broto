@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="image/favicon.png">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="topo_entrega">
+        <span>
+            <img src="image/icon_entrega.png" alt="Ícone de entrega" width="16"> Frete grátis para compras acima de R$ 199,00
+        </span>
+        <span>Sustentável do início ao fim</span>
+    </div>
+
+    <header>
+        <div>
+            <a href="index.html"><img src="image/logo_principal.png" alt="Logotipo Pequeno Broto"></a>
+        </div>
+
+        <nav class="menu_paginas">
+            <a href="index.html">Início</a>
+            <a href="loja.html">Loja</a>
+            <a href="sobre.html">Sobre nós</a>
+            <a href="sustentabilidade.html">Sustentabilidade</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+        <div class="icons_cabecalho">
+            <img src="image/icon_lupa.png" alt="Buscar">
+        <a href="login.html"><img src="image/icon_conta.png" alt="Login"></a>
+            <img src="image/icon_favorito.png" alt="Favoritos">
+            <img src="image/icon_carrinho.png" alt="Sacola de Compras">
+        </div>
+    </header>
+
+    <main>
+        <section class="secao_contato">
+            <div class="cabecalho_padrao">
+                <h2>Fale Conosco</h2>
+                <p>Preencha o formulário abaixo.</p>
+            </div>
+
+            <form method="GET" class="formulario_contato">
+            
+                <div class="grupo_form">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome_usuario" required>
+                </div>
+
+                <div class="grupo_form">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email_usuario" required>
+                </div>
+
+                <div class="grupo_form">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone_usuario" placeholder="(00) 00000-0000">
+                </div>
+
+                <div class="grupo_form">
+                    <label for="assunto">Assunto:</label>
+                    <select id="assunto" name="assunto_usuario" required>
+                        <option value="sugestao">Sugestões</option>
+                        <option value="duvida">Dúvida sobre produto</option>
+                        <option value="pedido">Status do pedido</option>
+                        <option value="parceria">Parcerias</option>
+                        <option value="quantidade">Quantidade maior de produtos</option>
+                    </select>
+                </div>
+
+                <div class="grupo_form">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem_usuario" rows="5" required></textarea>
+                </div>
+
+                <div class="grupo_form checkbox_termos">
+                    <input type="checkbox" id="termos" name="aceite_termos" value="sim" required>
+                    <label for="termos">Concordo com a Política de Privacidade e o uso dos meus dados para contato.</label>
+                </div>
+
+                <button type="submit" class="botao_compraragora">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer class="rodape">
+        <div class="rodape_coluna info_marca">
+            <img src="image/logo_rodape2.png" alt="Logo Pequeno Broto" class="logo_rodape">
+            <p>Papelaria sustentável feita com amor, consciência e respeito ao planeta.</p>
+            <div class="redes_sociais">
+                <a href="https://www.instagram.com/pequeno.broto.papelaria?rpxt=cmR2M3dlYTk2bGlq"><img src="image/icon_instagram.png" alt="Instagram"></a>
+                <a href="https://pin.it/5aMg8IutU"><img src="image/icon_pinterest.png" alt="Pinterest"></a>
+                <a href="https://www.tiktok.com/@pequeno_broto_papelaria?is_from_webapp=1&sender_device=pc"><img src="image/icon_tiktok.png" alt="TikTok"></a>
+            </div>
+        </div>
+
+        <div class="rodape_coluna links_uteis com_borda">
+            <h4>Institucional</h4>
+            <nav>
+                <a href="sobre.html">Sobre nós</a>
+                <a href="sustentabilidade.html">Sustentabilidade</a>
+                <a href="contato.html">Trabalhe conosco</a>
+            </nav>
+        </div>
+
+        <div class="rodape_coluna links_uteis com_borda">
+            <h4>Ajuda</h4>
+            <nav>
+                <a href="#">Perguntas frequentes</a>
+                <a href="#">Trocas e devoluções</a>
+                <a href="#">Política de privacidade</a>
+                <a href="#">Prazo de entrega</a>
+            </nav>
+        </div>
+
+        <div class="rodape_coluna info_contato com_borda">
+            <h4>Contato</h4>
+            <p><img src="image/icon_whatsapp.png" alt="WhatsApp"> WhatsApp: (51) 99999-9999</p>
+            <p><img src="image/icon_email.png" alt="Email"> pequenobroto@gmail.com</p>
+            <p><img src="image/icon_localizacao.png" alt="Localização"> Gravataí, RS</p>
+        </div>
+
+        <img src="image/rodape_folhas.png" alt="Folhas" class="folha_rodape">
+    </footer>
+
+</body>
+</html>

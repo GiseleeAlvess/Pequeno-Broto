@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="image/favicon.png">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="topo_entrega">
+        <span>
+            <img src="image/icon_entrega.png" alt="Ícone de entrega" width="16"> Frete grátis para compras acima de R$ 199,00
+        </span>
+        <span>Sustentável do início ao fim</span>
+    </div>
+
+    <header>
+        <div>
+            <a href="index.html"><img src="image/logo_principal.png" alt="Logotipo Pequeno Broto"></a>
+        </div>
+
+        <nav class="menu_paginas">
+            <a href="index.html">Início</a>
+            <a href="loja.html">Loja</a>
+            <a href="sobre.html">Sobre nós</a>
+            <a href="sustentabilidade.html">Sustentabilidade</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+        <div class="icons_cabecalho">
+            <img src="image/icon_lupa.png" alt="Buscar">
+        <a href="login.html"><img src="image/icon_conta.png" alt="Login"></a>
+            <img src="image/icon_favorito.png" alt="Favoritos">
+            <img src="image/icon_carrinho.png" alt="Sacola de Compras">
+        </div>
+    </header>
+
+    <main>
+    <section class="secao_contato">
+            <div class="cabecalho_padrao">
+                <h2>Criar Conta</h2>
+                <p>Junte-se à Pequeno Broto e faça escolhas sustentáveis.</p>
+            </div>
+
+            <form method="GET" class="formulario_contato">
+                <div class="grupo_form">
+                    <label for="nome_cadastro">Nome Completo:</label>
+                    <input type="text" id="nome_cadastro" name="nome_cadastro" placeholder="Digite seu nome completo" required>
+                </div>
+
+                <div class="grupo_form">
+                    <label for="email_cadastro">E-mail:</label>
+                    <input type="email" id="email_cadastro" name="email_cadastro" placeholder="Digite seu e-mail" required>
+                </div>
+
+                <div class="grupo_form">
+                    <label for="senha_cadastro">Senha:</label>
+                    <input type="password" id="senha_cadastro" name="senha_cadastro" placeholder="Crie uma senha" required>
+                </div>
+
+                <div class="grupo_form">
+                    <label for="confirma_senha">Confirmar Senha:</label>
+                    <input type="password" id="confirma_senha" name="confirma_senha" placeholder="Repita sua senha" required>
+                </div>
+
+                <div class="grupo_form checkbox_termos">
+                    <input type="checkbox" id="termos_cadastro" name="termos_cadastro" value="sim" required>
+                    <label for="termos_cadastro">Concordo com os Termos de Uso e Política de Privacidade.</label>
+                </div>
+
+                <button type="submit" class="botao_compraragora">Cadastrar</button>
+                
+                <p class="text_cadastro">
+                    Já tem uma conta? <a href="login.html" style="color: #57623e; font-weight: bold; text-decoration: none;">Faça login aqui</a>.
+                </p>
+            </form>
+        </section>
+    </main>
+    
+    <footer class="rodape">
+        <div class="rodape_coluna info_marca">
+            <img src="image/logo_rodape2.png" alt="Logo Pequeno Broto" class="logo_rodape">
+            <p>Papelaria sustentável feita com amor, consciência e respeito ao planeta.</p>
+            <div class="redes_sociais">
+                <a href="https://www.instagram.com/pequeno.broto.papelaria?rpxt=cmR2M3dlYTk2bGlq"><img src="image/icon_instagram.png" alt="Instagram"></a>
+                <a href="https://pin.it/5aMg8IutU"><img src="image/icon_pinterest.png" alt="Pinterest"></a>
+                <a href="https://www.tiktok.com/@pequeno_broto_papelaria?is_from_webapp=1&sender_device=pc"><img src="image/icon_tiktok.png" alt="TikTok"></a>
+            </div>
+        </div>
+
+        <div class="rodape_coluna links_uteis com_borda">
+            <h4>Institucional</h4>
+            <nav>
+                <a href="sobre.html">Sobre nós</a>
+                <a href="sustentabilidade.html">Sustentabilidade</a>
+                <a href="contato.html">Trabalhe conosco</a>
+            </nav>
+        </div>
+
+        <div class="rodape_coluna links_uteis com_borda">
+            <h4>Ajuda</h4>
+            <nav>
+                <a href="#">Perguntas frequentes</a>
+                <a href="#">Trocas e devoluções</a>
+                <a href="#">Política de privacidade</a>
+                <a href="#">Prazo de entrega</a>
+            </nav>
+        </div>
+
+        <div class="rodape_coluna info_contato com_borda">
+            <h4>Contato</h4>
+            <p><img src="image/icon_whatsapp.png" alt="WhatsApp"> WhatsApp: (51) 99999-9999</p>
+            <p><img src="image/icon_email.png" alt="Email"> pequenobroto@gmail.com</p>
+            <p><img src="image/icon_localizacao.png" alt="Localização"> Gravataí, RS</p>
+        </div>
+
+        <img src="image/rodape_folhas.png" alt="Folhas" class="folha_rodape">
+    </footer>
+
+</body>
+</html>
