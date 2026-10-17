@@ -1,0 +1,861 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff9ef;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5px 30px;
+    background-color: #fff9ef;
+}
+
+header img {
+    margin-top: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    margin: 0 15px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.topo_entrega {
+    background-color: #57623e;
+    color: #ffffff;
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    font-size: 15px;
+}
+
+.topo_entrega span {
+    display: flex;
+    align-items: center;
+    gap: 8.5px;
+}
+
+.menu_paginas a:hover {
+    text-decoration: underline;
+}
+
+.icons_cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icons_cabecalho img {
+    width: 24px;
+    height: auto;
+    cursor: pointer;
+}
+
+.banner_principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5px 0 0.5px 30px;
+    width: auto; 
+    height: auto;
+}
+
+.papelaria_sustentavel {
+    background-color: #c9c2a5;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'DM Sans', sans-serif;
+    color: #5e6651;
+}
+
+.banner_principal h1 {
+    font-size: 5.5rem;
+    color: rgb(74, 93, 35);
+    margin: 20px 0;
+    margin-bottom: 30px;
+}
+
+.cor_preto {
+    color: #060606; 
+}
+
+.cor_verde {
+    color: rgb(74, 93, 35);
+}
+
+.banner_principal p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+}
+
+.botao_compraragora {
+    display: inline-block;
+    background-color: #6b7a63;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-right: 15px;
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: 30px;
+}
+
+.botao_conhecamissao {
+    display: inline-block;
+    background-color: transparent;
+    color: #4a5d23;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    border: 1px solid #4a5d23;
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: 30px;
+}
+
+.diferenciais_lista {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    margin-top: 30px;
+    list-style: none;
+    padding: 0;
+}
+
+.diferenciais_lista li {
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+}
+
+.diferenciais_lista img {
+    width: 35px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.categorias {
+    padding: 30px;
+}
+
+.cabecalho_categorias {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.cabecalho_categorias h2 {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: 'cormorant garamond', sans-serif;
+}
+
+.cabecalho_categorias a {
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 15px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.lista_categorias {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.item_categoria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.fundo_icon {
+    background-color: #eee4d4;
+    width: 140px;
+    height: 140px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fundo_icon img {
+    max-width: 80%;
+    height: auto;
+}
+
+.item_categoria p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    color: #000;
+}
+
+.cards_informativos {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 40px;
+}
+
+.card {
+    width: 50%;
+    border-radius: 25px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+.card_conteudo {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card_conteudo h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-weight: bold;
+}
+
+.card_conteudo p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    line-height: 1.4;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.sobre_nos {
+    background-image: url('../image/planta.png');
+    color: rgb(249, 246, 246);
+}
+
+.botao_sobrenos {
+    background-color: white;
+    color: #6b7a63;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    align-self: flex-start;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.ver_lancamentos {
+    background-image: url('../image/porta_lapis.png');
+    color: #333;
+}
+
+.botao_ver_lancamentos {
+    background-color: transparent;
+    color: #57623e;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    border: 1px solid #57623e;
+    align-self: flex-start;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.produtos_destaque {
+    padding: 30px;
+}
+
+.cabecalho_secao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.cabecalho_secao h2 {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: 'Cormorant Garamond', sans-serif;
+}
+
+.cabecalho_secao a {
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 15px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.grade_destaques {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+    margin-bottom: 30px;
+}
+
+.fundo_imagem_produto {
+    background-color: #eee4d4;
+    border-radius: 25px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    height: 250px;
+}
+
+.fundo_imagem_produto img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.info_produto h3 {
+    font-size: 1.05rem;
+    font-weight: normal;
+    color: #333;
+    margin-bottom: 5px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.preco {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 5px;
+    font-family: 'Inter', sans-serif;
+}
+
+.avaliacao {
+    font-size: 0.85rem;
+    color: #777;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.avaliacao img {
+    width: 73.5px;
+    height: 13px;
+}
+
+.navegacao_pontos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.ponto {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid #9fa993;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.ponto.ativo {
+    background-color: #9fa993;
+}
+
+.novidades_email {
+    background-color: #b07b4f;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 60px;
+    border-radius: 20px;
+    margin: 0.5px 30px;
+}
+
+.novidades_texto {
+    width: 50%
+}
+
+.novidades_texto h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin-bottom: 15px;
+    font-family: 'Cormorant Garamond', sans-serif;
+}
+
+.novidades_texto p {
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.form_email_novidades {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+#nemail {
+    width: 100%;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 15px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.form_email_novidades input[type="submit"] {
+    background-color: #9ba58a;
+    color: white;
+    border: none;
+    padding: 20px 35px;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-left: -30px;
+}
+
+.rodape {
+    display: flex;
+    justify-content: flex-start;
+    gap: 70px;
+    background-color: #57623e;
+    color: white;
+    padding: 30px 30px;
+    margin-top: 40px;
+    position: relative;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.rodape_coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.info_marca {
+    width: 25%;
+}
+
+.logo_rodape {
+    width: 250px;
+}
+
+.redes_sociais {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    width: 25px;
+    height: auto;
+    cursor: pointer;
+}
+
+.com_borda {
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+    padding-left: 30px;
+}
+
+.rodape_coluna h4 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.links_uteis nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.links_uteis nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.links_uteis nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: #9aa789;
+    text-decoration-thickness: 2px;
+}
+
+.info_contato p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+.info_contato img {
+    width: 18px;
+}
+
+.folha_rodape {
+    position: absolute;
+    right: -20px;
+    height: 90%;
+}
+
+.secao_contato {
+    padding: 50px 40px;
+    max-width: 750px;
+    margin: auto; 
+    font-family: 'DM Sans', sans-serif;
+}
+
+.formulario_contato {
+    background-color: #eee4d4; 
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.grupo_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.grupo_form label {
+    font-weight: bold;
+    color: #495233; 
+    margin-bottom: 8px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.grupo_form input[type="text"],
+.grupo_form input[type="email"],
+.grupo_form input[type="tel"],
+.grupo_form input[type="password"],
+.grupo_form select,
+.grupo_form textarea {
+    padding: 15px;
+    border: 1px solid #c9c2a5;
+    border-radius: 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    outline: none;
+    background-color: white;
+}
+
+.checkbox_termos {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox_termos input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.checkbox_termos label {
+    font-weight: normal;
+    margin-bottom: 0;
+    color: #333;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.formulario_contato .botao_compraragora {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+
+.pagina_sustentabilidade {
+    padding: 60px 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'DM Sans', sans-serif;
+    color: #333;
+}
+
+.conteudo_sustentabilidade {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.texto_sustentabilidade {
+    flex: 1;
+}
+
+.texto_sustentabilidade h3 {
+    color: #57623e;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.45rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.texto_sustentabilidade p {
+    line-height: 1.4;
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.video_sustentabilidade {
+    flex: 1;
+    background-color: #eee4d4;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.video_sustentabilidade video {
+    border-radius: 10px;
+}
+
+.legenda_video {
+    margin-top: 15px;
+    font-size: 0.95rem;
+    color: #757575;
+    font-style: italic;
+}
+
+.beneficios_reciclagem {
+    margin-top: 60px;
+    background-color: #eee4d4;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.beneficios_reciclagem h3 {
+    color: #b67135;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.tabela_sustentabilidade {
+    width: 100%;
+    max-width: 750px;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: rgb(245, 245, 245);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.tabela_sustentabilidade th {
+    background-color: #57623e;
+    color: rgb(245, 245, 245);
+    font-size: 1.1rem;
+    padding: 20px;
+    text-align: left;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+}
+
+.tabela_sustentabilidade td {
+    padding: 15px 18px;
+    border-bottom: 1px solid #caa76f;
+    color: #333;
+    line-height: 1.5;
+}
+
+.tabela_sustentabilidade tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.coluna_destaque {
+    font-weight: bold;
+    color: #b5865d !important;
+    width: 35%;
+}
+
+.pagina_sobre {
+    padding: 60px 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'DM Sans', sans-serif;
+    color: #333;
+}
+
+.conteudo_sobre {
+    display: flex;
+    gap: 60px;
+    margin-top: 35px;
+    align-items: center;
+}
+
+.texto_historia {
+    flex: 2;
+}
+
+.texto_historia p {
+    line-height: 1.7;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.citacao {
+    font-family: 'Cormorant Garamond', sans-serif;
+    color: #757575;
+    margin: 30px 0px;
+    font-style: italic;
+    background-color: #f6f4ed;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.fundadora {
+    flex: 1;
+    text-align: center;
+    background-color: #eee4d4;
+    padding: 40px 20px;
+    border-radius: 20px;
+}
+
+.foto_circular {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #57623e;
+    margin-bottom: 20px;
+}
+
+.fundadora h3 {
+    color: #57623e;
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.cargo {
+    color: #b5865d;
+    font-weight: bold;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.galeria_sobre {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.galeria_sobre h3 {
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 2.2rem;
+    color: #57623e;
+    margin-bottom: 30px;
+}
+
+.grade_imagens {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.grade_imagens img {
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.pagina_loja {
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.filtros_loja {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.filtro {
+    background-color: transparent;
+    border: 1px solid #57623e;
+    color: #57623e;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.filtro:hover, .filtro.ativo {
+    background-color: #57623e;
+    color: white;
+}
+
+.grade_loja {
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.botao_carrinho {
+    width: 100%;
+    background-color: #b5865d;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botao_carrinho:hover {
+    background-color: #9c714e;
+}
+
+.text_cadastro {
+    text-align: center;
+    font-family: 'DM Sans', sans-serif; 
+    font-size: 0.95rem;
+    margin-top: -15px;
+}
+
+.cabecalho_padrao {
+    text-align: center;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.cabecalho_padrao h2 {
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 2.8rem;
+    color: #57623e;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.cabecalho_padrao p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+    color: #555;
+}
